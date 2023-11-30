@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cass Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="backgroundImage">
+    <div class="backgroundColor">
+        <header>
+            <h1 class="header">CassClass Survey Form</h1>
+            <p class="subHeader">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <main>
+            <form class="formBox">
+                <fieldset>
+                    <label for="name">Name</label>
+                        <input type="text" 
+                        id="name" 
+                        name="name"
+                        placeholder="Enter your name" 
+                        autocomplete="off" 
+                        required />
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                        <input type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="Enter your Email" 
+                        autocomplete="off" 
+                        required />
+                </fieldset>
+                <fieldset>
+                    <label for="age">Age <span class="clue">(optional)</span></label>
+                        <input type="number" 
+                        id="age" 
+                        name="age"
+                        placeholder="Age" 
+                        min="13"
+                        max="120"
+                        required />
+                </fieldset>
+                <fieldset>
+                    <label>Which option best describes your current role?</label>
+                        <select id="role" name="role" required>
+                            <option value selected disabled>Select current role</option>
+                            <option value="1">Student</option>
+                            <option value="2">Full Time Job</option>
+                            <option value="3">Full Time Learner</option>
+                            <option value="4">Prefer not to say</option>
+                            <option value="5">Other</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <label>Would you recommend CassClass to a friend?</label>
+                        <label>
+                            <input 
+                                class="inline"
+                                type="radio"
+                                value="definitely"
+                                name="recommend"
+                                checked /> Definitely
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                                type="radio"
+                                value="maybe"
+                                name="recommend"/> Maybe
+                        </label>                        
+                        <label>
+                            <input 
+                                class="inline"
+                                type="radio"
+                                value="not-sure"
+                                name="recommend"/> Not sure
+                        </label>
+                </fieldset>
+                <fieldset>
+                    <label>What is your favorite feature of CassClass?</label>
+                        <select id="feature" name="feature" required>
+                            <option value selected disabled>Select an option</option>
+                            <option value="1">Challenges</option>
+                            <option value="2">Projects</option>
+                            <option value="3">Community</option>
+                            <option value="4">Open Source</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <label>What would you like to see improved? <span class="clue">(Check all that apply)</span></label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="front-end-projects" /> Front-end Projects
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="back-end-projects" /> Back-end Projects
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="data-visualization" /> Data Visualization
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="challenges" /> Challenges
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="open-source-community" /> Open Source Community
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="gitter-help-rooms" /> Gitter help rooms
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="videos" /> Videos
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="city-meetups" /> City Meetups
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="wiki" /> Wiki
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="forum" /> Forum
+                        </label>
+                        <label>
+                            <input 
+                                class="inline"
+                            type="checkbox" 
+                            name="improved"
+                            value="additional-courses" /> Additional Courses
+                        </label>
+                </fieldset>
+                <fieldset>
+                    <label>Any comments or suggestions?</label><textarea
+                            id="comment"
+                            name="comment"
+                            placeholder="Enter your comment here..."
+                            required></textarea>
+                </fieldset>
+                <fieldset>
+                    <input class="submitButton" type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </main>
+    </div>
+    </div>
+</body>
+</html>
