@@ -5,7 +5,7 @@
 }
 
 .backgroundImage{
-    background-image: url("public/class.jpg");
+    background-image: url("./class.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
